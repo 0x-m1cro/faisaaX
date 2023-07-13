@@ -1,5 +1,5 @@
 import { Fragment, memo } from 'react'
-import { Trade } from '@wagyu-swap/sdk'
+import { Trade } from '@faisaa-finance/sdk'
 import { Text, Flex, ChevronRightIcon } from 'packages/uikit'
 import { unwrappedToken } from 'utils/wrappedCurrency'
 

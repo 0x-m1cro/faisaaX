@@ -1,5 +1,5 @@
 import BigNumber from 'bignumber.js'
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@faisaa-finance/sdk'
 
 export type TranslatableText =
   | string
@@ -11,7 +11,9 @@ export type TranslatableText =
     }
 export interface Address {
   111?: string
-  106: string
+  106?: string
+  1116?: string
+  1115?: string
 }
 
 export interface SerializedToken {

@@ -35,7 +35,7 @@ import FlexRow from '../FlexRow'
 
 const LOGOS = {
   VLX: VelasIcon,
-  WAG: LogoIcon,
+  FAISAA: LogoIcon,
 }
 
 interface SetPositionCardProps {

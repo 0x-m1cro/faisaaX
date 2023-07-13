@@ -14,7 +14,7 @@ import {
   ErrorIcon,
 } from 'packages/uikit'
 import { useWeb3React } from '@web3-react/core'
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@faisaa-finance/sdk'
 import { Ifo, PoolIds } from 'config/constants/types'
 import tokens from 'config/constants/tokens'
 import { wagVlxLpToken } from 'config/constants/ifo'
@@ -119,7 +119,7 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
   const { t } = useTranslation()
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     t(
-      'Sorry, you didn’t contribute enough WAG to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your WAG.',
+      'Sorry, you didn’t contribute enough FAISAA to meet the minimum threshold. You didn’t buy anything in this sale, but you can still reclaim your FAISAA.',
     ),
     { placement: 'bottom' },
   )
@@ -190,7 +190,7 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
         <Message my="24px" p="8px" variant="danger">
           <Box>
             <MessageText display="inline">
-              {t('You don’t have any average WAG balance available to commit in the IFO WAG pool.')}
+              {t('You don’t have any average FAISAA balance available to commit in the IFO FAISAA pool.')}
             </MessageText>{' '}
             <MessageTextLink display="inline" fontWeight={700} href="/ifo#ifo-how-to" color="failure">
               {t('How does it work?')} »
@@ -263,7 +263,7 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
           {ifov31Msg || (
             <>
               <Text textAlign="center" fontSize="14px">
-                {t('To participate in the next IFO, stake some WAG in the IFO WAG pool!')}
+                {t('To participate in the next IFO, stake some FAISAA in the IFO FAISAA pool!')}
               </Text>
               <MessageTextLink href="/ifo#ifo-how-to" textAlign="center">
                 {t('How does it work?')} »

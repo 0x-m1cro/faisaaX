@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { Contract } from '@ethersproject/contracts'
-import { SwapParameters, Trade } from '@wagyu-swap/sdk'
+import { SwapParameters, Trade } from '@faisaa-finance/sdk'
 import { TranslateFunction, useTranslation } from 'contexts/Localization'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'
@@ -188,7 +188,7 @@ function swapErrorToUserReadableMessage(error: any, t: TranslateFunction) {
       )
     case 'TransferHelper: TRANSFER_FROM_FAILED':
       return t('The input token cannot be transferred. There may be an issue with the input token.')
-    case 'Wagyuswap: TRANSFER_FAILED':
+    case 'Faisaa.finance: TRANSFER_FAILED':
       return t('The output token cannot be transferred. There may be an issue with the output token.')
     default:
       if (reason?.indexOf('undefined is not an object') !== -1) {

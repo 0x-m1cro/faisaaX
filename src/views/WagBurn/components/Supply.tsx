@@ -87,7 +87,7 @@ interface IProps {
 }
 
 enum ETab {
-  Total = 'Total WAG Supply',
+  Total = 'Total FAISAA Supply',
   TotalC = 'Total Circ. Supply',
   TotalB = 'Total Wag burnt',
 }
@@ -99,10 +99,10 @@ export const Supply = ({ burn }: IProps) => {
 
   const items = {
     [ETab.Total]: [
-      { label: 'Total WAG Supply', value: formatWag(burn.totalSupply) },
-      { label: 'Total WAG Supply on BSC', value: formatWag(burn.bscTotalSupply) },
-      { label: 'Total WAG Supply on VELAS', value: formatWag(burn.vlxTotalSupply) },
-      { label: 'Total WAG Supply on TELOS', value: formatWag(burn.tlosTotalSupply) },
+      { label: 'Total FAISAA Supply', value: formatWag(burn.totalSupply) },
+      { label: 'Total FAISAA Supply on BSC', value: formatWag(burn.bscTotalSupply) },
+      { label: 'Total FAISAA Supply on VELAS', value: formatWag(burn.vlxTotalSupply) },
+      { label: 'Total FAISAA Supply on TELOS', value: formatWag(burn.tlosTotalSupply) },
     ],
     [ETab.TotalC]: [
       { label: 'Total Circulating Supply', value: formatWag(burn.cSupply) },
@@ -111,10 +111,10 @@ export const Supply = ({ burn }: IProps) => {
       { label: 'Total Circulating Supply on TELOS', value: formatWag(burn.tlosCSupply) },
     ],
     [ETab.TotalB]: [
-      { label: 'Total WAG Burnt', value: formatWag(burn.totalBurn) },
-      { label: 'Total WAG Burnt on BSC', value: formatWag(burn.bscBurn) },
-      { label: 'Total WAG Burnt on VELAS', value: formatWag(burn.vlxBurn) },
-      { label: 'Total WAG Burnt on TLOS', value: formatWag(burn.tlosBurn) },
+      { label: 'Total FAISAA Burnt', value: formatWag(burn.totalBurn) },
+      { label: 'Total FAISAA Burnt on BSC', value: formatWag(burn.bscBurn) },
+      { label: 'Total FAISAA Burnt on VELAS', value: formatWag(burn.vlxBurn) },
+      { label: 'Total FAISAA Burnt on TLOS', value: formatWag(burn.tlosBurn) },
     ],
   }
 

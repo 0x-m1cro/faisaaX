@@ -31,7 +31,7 @@ const Earned: React.FC<EarnedProps> = ({ earnings }) => {
   if (isMobile) {
     return (
       <Flex justifyContent="space-between">
-        <Text>{`WAG ${t('Earned')}`}</Text>
+        <Text>{`FAISAA ${t('Earned')}`}</Text>
         <Flex height="20px" alignItems="center">
           {Number(displayBalance) ? (
             <Balance fontSize="16px" value={Number(displayBalance)} />
@@ -47,7 +47,7 @@ const Earned: React.FC<EarnedProps> = ({ earnings }) => {
     <Container>
       <ActionTitles>
         <Text bold textTransform="uppercase" color="secondary" fontSize="12px" pr="4px">
-          {`WAG ${t('Earned')}`}
+          {`FAISAA ${t('Earned')}`}
         </Text>
       </ActionTitles>
       <ActionContent>

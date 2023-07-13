@@ -72,12 +72,12 @@ const Step1 = () => {
     <CardBody>
       {tooltipVisible && tooltip}
       <Heading as="h4" color="secondary" mb="16px">
-        {t('Stake WAG in IFO pool')}
+        {t('Stake FAISAA in IFO pool')}
       </Heading>
       <Box>
         <Text color="textSubtle" small>
           {t(
-            'The maximum amount of WAG user can commit to the Public Sale, is equal to the average WAG balance in the IFO WAG pool prior to the IFO. Stake more WAG to increase the maximum WAG you can commit to the sale. Missed this IFO? You can keep staking in the IFO WAG Pool to join the next IFO sale.',
+            'The maximum amount of FAISAA user can commit to the Public Sale, is equal to the average FAISAA balance in the IFO FAISAA pool prior to the IFO. Stake more FAISAA to increase the maximum FAISAA you can commit to the sale. Missed this IFO? You can keep staking in the IFO FAISAA Pool to join the next IFO sale.',
           )}
         </Text>
         <TooltipText as="span" fontWeight={700} ref={targetRef} color="textSubtle" small>
@@ -93,10 +93,10 @@ const Step2 = () => {
   return (
     <CardBody>
       <Heading as="h4" color="secondary" mb="16px">
-        {t('Commit WAG')}
+        {t('Commit FAISAA')}
       </Heading>
       <Text color="textSubtle" small>
-        {t('When the IFO sales are live, you can “commit” your WAG to buy the tokens being sold.')} <br />
+        {t('When the IFO sales are live, you can “commit” your FAISAA to buy the tokens being sold.')} <br />
       </Text>
     </CardBody>
   )
@@ -167,7 +167,7 @@ const IfoSteps: React.FC<TypeProps> = () => {
             </Heading>
             <Text color="textSubtle" small>
               {t(
-                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent WAG tokens will be returned to your wallet.',
+                'After the IFO sales finish, you can claim any IFO tokens that you bought, and any unspent FAISAA tokens will be returned to your wallet.',
               )}
             </Text>
           </CardBody>

@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token } from '@wagyu-swap/sdk'
+import { ChainId, JSBI, Percent, Token } from '@faisaa-finance/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
 import { mainnetTokens, testnetTokens } from './tokens'
 import addresses from './addresses.json'
@@ -27,7 +27,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     mainnetTokens.usdv,
     mainnetTokens.dai,
   ],
-  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd, testnetTokens.usdt],
 }
 
 /**
@@ -50,13 +50,13 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 // used for display in the default list when adding liquidity
 export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.MAINNET]: [mainnetTokens.busd, mainnetTokens.cake, mainnetTokens.wbtc],
-  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd, testnetTokens.usdt],
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.MAINNET]: [mainnetTokens.wvlx, mainnetTokens.dai, mainnetTokens.busd, mainnetTokens.usdt],
-  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd],
+  [ChainId.TESTNET]: [testnetTokens.wvlx, testnetTokens.cake, testnetTokens.busd, testnetTokens.usdt],
 }
 
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
@@ -114,8 +114,8 @@ export const SLOW_INTERVAL = 60000
 export const NOT_ON_SALE_SELLER = '0x0000000000000000000000000000000000000000'
 
 // VLX
-export const DEFAULT_INPUT_CURRENCY = 'VLX'
-// WAG
+export const DEFAULT_INPUT_CURRENCY = 'CORE'
+// FAISAA
 export const DEFAULT_OUTPUT_CURRENCY = addresses[parseInt(CHAIN_ID, 10) as ChainId].WAGToken
 
 export const FARM_AUCTION_HOSTING_IN_SECONDS = 604800
@@ -126,7 +126,7 @@ export const GELATO_NATIVE = '0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee'
 export const GELATO_HANDLER = 'pancakeswap'
 export const GENERIC_GAS_LIMIT_ORDER_EXECUTION = BigNumber.from(500000)
 
-export const EXCHANGE_DOCS_URLS = 'https://docs.wagyuswap.app/products/pancakeswap-exchange'
-export const LIMIT_ORDERS_DOCS_URL = 'https://docs.wagyuswap.app/products/pancakeswap-exchange/limit-orders'
+export const EXCHANGE_DOCS_URLS = 'https://docs.faisaa.finance/products/pancakeswap-exchange'
+export const LIMIT_ORDERS_DOCS_URL = 'https://docs.faisaa.finance/products/pancakeswap-exchange/limit-orders'
 
 export const GALAXY_NFT_CAMPAIGN_ID = 'GCpp2UUxqQ'

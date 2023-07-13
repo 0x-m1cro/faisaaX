@@ -1,4 +1,4 @@
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@faisaa-finance/sdk'
 import { Flex, Message, MessageText, useMatchBreakpoints } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { memo } from 'react'

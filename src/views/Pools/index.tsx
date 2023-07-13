@@ -318,7 +318,7 @@ const Pools: React.FC = () => {
         {showFinishedPools && (
           <FinishedTextContainer>
             <Text fontSize={['16px', null, '20px']} color="failure" pr="4px">
-              {t('Looking for v1 WAG sizzle pools?')}
+              {t('Looking for v1 FAISAA sizzle pools?')}
             </Text>
             <FinishedTextLink href="/migration" fontSize={['16px', null, '20px']} color="failure">
               {t('Go to migration page')}.
@@ -336,7 +336,7 @@ const Pools: React.FC = () => {
           mx="auto"
           mt="12px"
           src="/images/decorations/3d-syrup-bunnies.png"
-          alt="Wagyuswap illustration"
+          alt="Faisaa.finance illustration"
           width={192}
           height={184.5}
         /> */}

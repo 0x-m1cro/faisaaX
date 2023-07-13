@@ -119,7 +119,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
         href: '/info',
       },
       {
-        label: t('WAG Burn'),
+        label: t('FAISAA Burn'),
         href: '/burn',
       },
       // {
@@ -157,7 +157,7 @@ const config: (t: ContextApi['t'], languageCode?: string) => ConfigMenuItemsType
       },
       {
         label: t('Docs'),
-        href: 'https://docs.wagyuswap.app/wagyuswap',
+        href: 'https://docs.faisaa.finance/wagyuswap',
         type: DropdownMenuItemType.EXTERNAL_LINK,
       },
       {

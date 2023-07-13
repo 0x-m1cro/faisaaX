@@ -39,11 +39,11 @@ const Multiplier: React.FC<MultiplierProps> = ({ multiplier }) => {
     <>
       <Text>
         {t(
-          'The Multiplier represents the proportion of WAG rewards each farm receives, as a proportion of the WAG produced each block.',
+          'The Multiplier represents the proportion of FAISAA rewards each farm receives, as a proportion of the FAISAA produced each block.',
         )}
       </Text>
       <Text my="24px">
-        {t('For example, if a 1x farm received 1 WAG per block, a 40x farm would receive 40 WAG per block.')}
+        {t('For example, if a 1x farm received 1 FAISAA per block, a 40x farm would receive 40 FAISAA per block.')}
       </Text>
       <Text>{t('This amount is already included in all APR calculations for the farm.')}</Text>
     </>

@@ -26,14 +26,14 @@ const AutoEarning: React.FunctionComponent<AutoEarningProps> = ({
 
   const actionTitle = (
     <Text fontSize="12px" bold color="secondary" as="span" textTransform="uppercase">
-      {t('Recent WAG profit')}
+      {t('Recent FAISAA profit')}
     </Text>
   )
 
   if (isMobile) {
     return (
       <Flex justifyContent="space-between">
-        <Text>{t('Recent WAG profit')}</Text>
+        <Text>{t('Recent FAISAA profit')}</Text>
         <Flex height="20px" alignItems="center">
           {earningTokenBalance > 0 ? (
             <Balance fontSize="16px" value={earningTokenBalance} decimals={5} />

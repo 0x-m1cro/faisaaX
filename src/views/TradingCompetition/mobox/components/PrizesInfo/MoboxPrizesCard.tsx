@@ -28,7 +28,7 @@ const MoboxPrizesCard = () => {
       <Box p="24px">
         <Text color="textSubtle" fontSize="14px">
           {t(
-            'Prizes to be distributed in WAG and DAR in a distribution of 1:5 and shared by all members of each respective tier. The price of token prizes ($WAG and $DAR) in USD will be determined as per their BUSD pair price during the tally period.',
+            'Prizes to be distributed in FAISAA and DAR in a distribution of 1:5 and shared by all members of each respective tier. The price of token prizes ($FAISAA and $DAR) in USD will be determined as per their BUSD pair price during the tally period.',
           )}
         </Text>
       </Box>

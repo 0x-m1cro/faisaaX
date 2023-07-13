@@ -1,4 +1,4 @@
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@faisaa-finance/sdk'
 import tokens from 'config/constants/tokens'
 
 interface WarningTokenList {

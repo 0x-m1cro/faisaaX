@@ -2,7 +2,7 @@ import { useEffect, useCallback, useState, useMemo, useRef, createContext } from
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import { Image, Heading, RowType, Toggle, Text, Button, ArrowForwardIcon, Flex, Link } from 'packages/uikit'
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@faisaa-finance/sdk'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import styled from 'styled-components'
 import FlexLayout from 'components/Layout/Flex'
@@ -457,7 +457,7 @@ const Farms: React.FC = ({ children }) => {
           </Flex>
         )}
         <div ref={observerRef} />
-        {/* <StyledImage src="/images/decorations/3dpan.png" alt="Wagyuswap illustration" width={120} height={103} /> */}
+        {/* <StyledImage src="/images/decorations/3dpan.png" alt="Faisaa.finance illustration" width={120} height={103} /> */}
       </Page>
     </FarmsContext.Provider>
   )

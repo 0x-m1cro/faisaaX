@@ -27,7 +27,7 @@ const EasterPrizesCard = () => {
       <Box p="24px">
         <Text color="textSubtle" fontSize="14px">
           {t(
-            'Prizes to be distributed in WAG and shared by all members of a tier. WAG price in USD to be determined on the day of distribution. Details below.',
+            'Prizes to be distributed in FAISAA and shared by all members of a tier. FAISAA price in USD to be determined on the day of distribution. Details below.',
           )}
         </Text>
       </Box>

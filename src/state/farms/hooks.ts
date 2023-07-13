@@ -1,4 +1,4 @@
-import { ChainId } from '@wagyu-swap/sdk'
+import { ChainId } from '@faisaa-finance/sdk'
 import { useWeb3React } from '@web3-react/core'
 import BigNumber from 'bignumber.js'
 import { farmsConfig, SLOW_INTERVAL } from 'config/constants'
@@ -49,10 +49,10 @@ export const usePollFarmsWithUserData = () => {
 
 /**
  * Fetches the "core" farm data used globally
- * 2 = WAG-VLX LP
+ * 2 = FAISAA-VLX LP
  * 3 = BUSD-VLX LP
  */
-const coreFarmPIDs = CHAIN_ID === String(ChainId.MAINNET) ? [2, 3] : [1, 2]
+const coreFarmPIDs = CHAIN_ID === String(ChainId.MAINNET) ? [0, 1] : [0, 3]
 export const usePollCoreFarmData = () => {
   const dispatch = useAppDispatch()
 

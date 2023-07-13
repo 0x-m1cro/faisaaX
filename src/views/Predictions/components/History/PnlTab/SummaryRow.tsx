@@ -1,4 +1,4 @@
-import { Price } from '@wagyu-swap/sdk'
+import { Price } from '@faisaa-finance/sdk'
 import { Flex, Text } from 'packages/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'
 import { useTranslation } from 'contexts/Localization'

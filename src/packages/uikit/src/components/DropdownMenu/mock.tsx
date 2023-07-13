@@ -12,7 +12,7 @@ const ItemsMock: DropdownMenuItems[] = [
   },
   {
     label: 'LP Migration',
-    href: 'https://exchange.wagyuswap.app/migration',
+    href: 'https://faisaa.finance/migration',
     type: DropdownMenuItemType.EXTERNAL_LINK,
   },
   {

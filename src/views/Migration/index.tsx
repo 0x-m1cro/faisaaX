@@ -26,12 +26,12 @@ const MigrationPage: React.FC = () => {
     {
       stepId: ProgressStepsType.STEP1,
       canHover: true,
-      text: t('Unstake LP tokens and WAG from the old WAGFarm contract.'),
+      text: t('Unstake LP tokens and FAISAA from the old WAGFarm contract.'),
     },
     {
       stepId: ProgressStepsType.STEP2,
       canHover: true,
-      text: t('Stake LP tokens and WAG to the new WAGFarm v2 contract.'),
+      text: t('Stake LP tokens and FAISAA to the new WAGFarm v2 contract.'),
     },
   ]
 
@@ -74,7 +74,7 @@ const MigrationPage: React.FC = () => {
         <Heading scale="lg" color="text">
           {t('Migrate your stakings to the new WAGFarm contract.')}
         </Heading>
-        <Link href="https://docs.wagyuswap.app/wagyuswap/products/migration" external>
+        <Link href="https://docs.faisaa.finance/wagyuswap/products/migration" external>
           <Button p="0" variant="text">
             <Text color="primary" bold fontSize="16px" mr="4px">
               {t('Learn more')}

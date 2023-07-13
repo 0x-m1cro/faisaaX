@@ -1,4 +1,4 @@
-import { FACTORY_ADDRESS } from '@wagyu-swap/sdk'
+import { FACTORY_ADDRESS } from '@faisaa-finance/sdk'
 import { getUnixTime, sub } from 'date-fns'
 import { gql } from 'graphql-request'
 import { GetStaticProps } from 'next'
@@ -86,7 +86,7 @@ export const getStaticProps: GetStaticProps = async () => {
   const usersQuery = gql`
     query userCount($since: ISO8601DateTime, $till: ISO8601DateTime) {
       ethereum(network: bsc) {
-        dexTrades(exchangeName: { in: ["Wagyuswap", "Wagyuswap v2"] }, date: { since: $since, till: $till }) {
+        dexTrades(exchangeName: { in: ["Faisaa.finance", "Faisaa.finance v2"] }, date: { since: $since, till: $till }) {
           count(uniq: senders)
         }
       }

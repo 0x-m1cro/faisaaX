@@ -7,7 +7,7 @@ const StakeVaultButton = (props) => {
 
   return (
     <Button {...props} disabled>
-      {t('Stake WAG in IFO pool')}
+      {t('Stake FAISAA in IFO pool')}
     </Button>
   )
 }

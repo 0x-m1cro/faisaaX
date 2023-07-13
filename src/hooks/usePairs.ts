@@ -1,4 +1,4 @@
-import { TokenAmount, Pair, Currency } from '@wagyu-swap/sdk'
+import { TokenAmount, Pair, Currency } from '@faisaa-finance/sdk'
 import { useMemo } from 'react'
 import IPancakePairABI from 'config/abi/IPancakePair.json'
 import { Interface } from '@ethersproject/abi'

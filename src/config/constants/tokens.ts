@@ -1,4 +1,4 @@
-import { ChainId, Token } from '@wagyu-swap/sdk'
+import { ChainId, Token } from '@faisaa-finance/sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'
 import { SerializedToken } from './types'
@@ -13,17 +13,17 @@ interface TokenList {
 const defineTokens = <T extends TokenList>(t: T) => t
 
 export const mainnetTokens = {
-  wvlx: new Token(MAINNET, addresses[106].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://wagyuswap.app/'),
+  wvlx: new Token(MAINNET, addresses[1116].WVLX, 18, 'WCORE', 'Wrapped CORE', 'https://faisaa.finance/'),
   // bnb here points to the wbnb contract. Wherever the currency VLX is required, conditional checks for the symbol 'VLX' can be used
-  vlx: new Token(MAINNET, addresses[106].WVLX, 18, 'VLX', 'VLX', 'https://wagyuswap.app/'),
-  cake: new Token(MAINNET, addresses[106].WAGToken, 18, 'WAG', 'WAGToken', 'https://wagyuswap.app/'),
+  vlx: new Token(MAINNET, addresses[1116].WVLX, 18, 'VLX', 'VLX', 'https://faisaa.finance/'),
+  cake: new Token(MAINNET, addresses[1116].WAGToken, 18, 'FAISAA', 'FAISAA Token', 'https://faisaa.finance/'),
   usdt: new Token(
     MAINNET,
     '0x01445C31581c354b7338AC35693AB2001B50b9aE',
     6,
     'USDT',
     'Multichain Tether USD',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
   weth: new Token(
     MAINNET,
@@ -31,16 +31,16 @@ export const mainnetTokens = {
     18,
     'WETH',
     'Multichain WETH',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
-  bnb: new Token(MAINNET, '0x2b8e9cd44c9e09d936149549a8d207c918ecb5c4', 18, 'BNB', 'BNB', 'https://wagyuswap.app/'),
+  bnb: new Token(MAINNET, '0x2b8e9cd44c9e09d936149549a8d207c918ecb5c4', 18, 'BNB', 'BNB', 'https://faisaa.finance/'),
   busd: new Token(
     MAINNET,
     '0xc111c29A988AE0C0087D97b33C6E6766808A3BD3',
     18,
     'BUSD',
     'Velas BUSD',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
   usdc: new Token(
     MAINNET,
@@ -48,7 +48,7 @@ export const mainnetTokens = {
     6,
     'USDC',
     'Velas USDC',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
   avax: new Token(
     MAINNET,
@@ -56,7 +56,7 @@ export const mainnetTokens = {
     18,
     'AVAX',
     'Velas AVAX',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
   ftm: new Token(
     MAINNET,
@@ -64,7 +64,7 @@ export const mainnetTokens = {
     18,
     'FTM',
     'Velas FTM',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
   matic: new Token(
     MAINNET,
@@ -72,7 +72,7 @@ export const mainnetTokens = {
     18,
     'MATIC',
     'Velas Polygon',
-    'https://wagyuswap.app/',
+    'https://faisaa.finance/',
   ),
   bitorb: new Token(
     MAINNET,
@@ -139,53 +139,45 @@ export const mainnetTokens = {
     'Velas Pad',
     'https://velaspad.io/',
   ),
-  syrup: new Token(TESTNET, addresses[106].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://wagyuswap.app/'),
-  // te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://wagyuswap.app/'),
-  // te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://wagyuswap.app/'),
-  // te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://wagyuswap.app/'),
-  // te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://wagyuswap.app/'),
+  syrup: new Token(TESTNET, addresses[1116].WAGStake, 18, 'xFAISAA', 'xFAISAA Token', 'https://faisaa.finance/'),
+  // te6: new Token(TESTNET, addresses[1115].TE6, 6, 'TE6', 'ERC20 Token', 'https://faisaa.finance/'),
+  // te9: new Token(TESTNET, addresses[1115].TE9, 9, 'TE9', 'ERC20 Token', 'https://faisaa.finance/'),
+  // te12: new Token(TESTNET, addresses[1115].TE12, 12, 'TE12', 'ERC20 Token', 'https://faisaa.finance/'),
+  // te18: new Token(TESTNET, addresses[1115].TE18, 18, 'TE18', 'ERC20 Token', 'https://faisaa.finance/'),
 }
 
 export const testnetTokens = {
-  wvlx: new Token(TESTNET, addresses[111].WVLX, 18, 'WVLX', 'Wrapped VLX', 'https://wagyuswap.app/'),
-  cake: new Token(TESTNET, addresses[111].WAGToken, 18, 'WAG', 'WAGToken', 'https://wagyuswap.app/'),
-  syrup: new Token(TESTNET, addresses[111].WAGStake, 18, 'WAGStake', 'WAGStake Token', 'https://wagyuswap.app/'),
+  wvlx: new Token(TESTNET, addresses[1115].WVLX, 18, 'WCORE', 'Wrapped CORE', 'https://faisaa.finance/'),
+  cake: new Token(TESTNET, addresses[1115].WAGToken, 18, 'FAISAA', 'FAISAA Token', 'https://faisaa.finance/'),
+  syrup: new Token(TESTNET, addresses[1115].WAGStake, 18, 'xFAISAA', 'xFAISAA Token', 'https://faisaa.finance/'),
   usdt: new Token(
     TESTNET,
-    '0x6Ef054B3E3C3C83E14527E8fa593c2c4435A6ea4',
+    addresses[1115].USDT,
     18,
     'USDT',
-    'Velas USDT',
-    'https://wagyuswap.app/',
+    'CORE USDT',
+    'https://faisaa.finance/',
   ),
   busd: new Token(
     TESTNET,
-    '0xe2172a8E1762ae9962A59EE88a731522A61a4cc9',
+    addresses[1115].USDT,
     18,
     'BUSD',
-    'Velas BUSD',
-    'https://wagyuswap.app/',
-  ),
-  usdc: new Token(
-    TESTNET,
-    '0x6b82bDB5a1AdFfa3816D1F942D60f0269647C646',
-    18,
-    'USDC',
-    'Velas USDC',
-    'https://wagyuswap.app/',
+    'CORE BUSD',
+    'https://faisaa.finance/',
   ),
   weth: new Token(
     TESTNET,
-    '0x3538C7f88aDbc8ad1F435f7EA70287e26b926344',
+    addresses[1115].WVLX,
     18,
     'WETH',
-    'Multichain WETH',
-    'https://wagyuswap.app/',
+    'CORE WETH',
+    'https://faisaa.finance/',
   ),
-  te6: new Token(TESTNET, addresses[111].TE6, 6, 'TE6', 'ERC20 Token', 'https://wagyuswap.app/'),
-  te9: new Token(TESTNET, addresses[111].TE9, 9, 'TE9', 'ERC20 Token', 'https://wagyuswap.app/'),
-  te12: new Token(TESTNET, addresses[111].TE12, 12, 'TE12', 'ERC20 Token', 'https://wagyuswap.app/'),
-  te18: new Token(TESTNET, addresses[111].TE18, 18, 'TE18', 'ERC20 Token', 'https://wagyuswap.app/'),
+  // te6: new Token(TESTNET, addresses[1115].TE6, 6, 'TE6', 'ERC20 Token', 'https://faisaa.finance/'),
+  // te9: new Token(TESTNET, addresses[1115].TE9, 9, 'TE9', 'ERC20 Token', 'https://faisaa.finance/'),
+  // te12: new Token(TESTNET, addresses[1115].TE12, 12, 'TE12', 'ERC20 Token', 'https://faisaa.finance/'),
+  // te18: new Token(TESTNET, addresses[1115].TE18, 18, 'TE18', 'ERC20 Token', 'https://faisaa.finance/'),
 }
 
 const tokens = () => {
@@ -201,7 +193,7 @@ const tokens = () => {
     // }, {} as typeof testnetTokens & typeof mainnetTokens)
   }
 
-  return mainnetTokens
+  return testnetTokens
 }
 
 const unserializedTokens = tokens()

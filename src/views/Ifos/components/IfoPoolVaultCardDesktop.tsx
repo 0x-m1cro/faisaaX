@@ -89,10 +89,10 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
         <StyledTokenContent justifyContent="space-between" alignItems="center">
           <Box ml="8px">
             <Text fontSize="24px" color="secondary" bold>
-              {t('IFO WAG')}
+              {t('IFO FAISAA')}
             </Text>
             <Text color="textSubtle" fontSize="14px">
-              {t('Stake WAG to participate in IFO')}
+              {t('Stake FAISAA to participate in IFO')}
             </Text>
           </Box>
           <TokenPairImage width={64} height={64} primaryToken={tokens.cake} secondaryToken={tokens.cake} />
@@ -103,12 +103,12 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
           <Flex flexDirection="column">
             <Text mb="16px">
               {t(
-                'This is the old IFO WAG pool. Check out the brand new WAG pool to learn how to earn WAG rewards with higher APY while enjoying other benefits.',
+                'This is the old IFO FAISAA pool. Check out the brand new FAISAA pool to learn how to earn FAISAA rewards with higher APY while enjoying other benefits.',
               )}
             </Text>
             <Flex ml="-34px">
               <Button onClick={handleOnClick} width="100%">
-                {isShowMigrationButton ? t('Migrate') : t('Go to new WAG pool')}
+                {isShowMigrationButton ? t('Migrate') : t('Go to new FAISAA pool')}
               </Button>
             </Flex>
           </Flex>
@@ -116,7 +116,7 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
         <Box>
           <Flex mb="4px">
             <Text fontSize="12px" color="secondary" bold mr="2px">
-              WAG
+              FAISAA
             </Text>
             <Text fontSize="12px" color="textSubtle" bold textTransform="uppercase">
               {t('Staked')}
@@ -133,7 +133,7 @@ const IfoPoolVaultCardDesktop: React.FC<IfoPoolVaultCardDesktopProps> = ({ accou
         </Box>
         <Box mt="24px">
           <Flex alignItems="center" justifyContent="space-between">
-            <Text fontSize="14px">{`${t('Recent WAG profit')}:`}</Text>
+            <Text fontSize="14px">{`${t('Recent FAISAA profit')}:`}</Text>
             <Balance
               bold
               fontSize="14px"

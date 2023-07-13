@@ -1,7 +1,7 @@
-# Contributing to the Wagyuswap ecosystem 🥞
+# Contributing to the Faisaa.finance ecosystem 🥞
 
 Thanks for taking the time to contribute !
-You can start by reading our [Contribution guidelines](https://docs.wagyuswap.app/code/contributing) first.
+You can start by reading our [Contribution guidelines](https://docs.faisaa.finance/code/contributing) first.
 
 ## Setup
 

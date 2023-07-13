@@ -35,7 +35,7 @@ const useGetProfileCosts = () => {
         })
         setIsLoading(false)
       } catch (error) {
-        toastError(t('Error'), t('Could not retrieve WAG costs for profile'))
+        toastError(t('Error'), t('Could not retrieve FAISAA costs for profile'))
       }
     }
 

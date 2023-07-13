@@ -12,7 +12,7 @@ import { useConfig } from '../context/ConfigProvider'
 
 const TOKEN_LOGOS = {
   VLX: <BnbUsdtPairTokenIcon />,
-  WAG: <LogoRoundIcon />,
+  FAISAA: <LogoRoundIcon />,
 }
 
 const Token = styled(Box)`

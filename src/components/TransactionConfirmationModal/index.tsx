@@ -1,5 +1,5 @@
 import { useCallback } from 'react'
-import { ChainId, Currency, Token } from '@wagyu-swap/sdk'
+import { ChainId, Currency, Token } from '@faisaa-finance/sdk'
 import styled from 'styled-components'
 import {
   Button,

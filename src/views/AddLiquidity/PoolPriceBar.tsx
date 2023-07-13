@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@wagyu-swap/sdk'
+import { Currency, Percent, Price } from '@faisaa-finance/sdk'
 import { Text } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { AutoColumn } from '../../components/Layout/Column'

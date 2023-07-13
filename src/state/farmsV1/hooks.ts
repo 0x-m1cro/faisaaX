@@ -61,7 +61,7 @@ export const usePollFarmsV1WithUserData = () => {
 
 /**
  * Fetches the "core" farm data used globally
- * 251 = WAG-VLX LP
+ * 251 = FAISAA-VLX LP
  * 252 = BUSD-VLX LP
  */
 export const usePollCoreFarmData = () => {

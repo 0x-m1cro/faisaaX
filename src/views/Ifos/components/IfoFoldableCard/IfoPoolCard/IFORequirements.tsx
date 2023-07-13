@@ -10,9 +10,9 @@ import TransWithElement from '../../TransWithElement'
 const NotOkNFT = ({ admissionProfile }) => {
   const { t } = useTranslation()
 
-  const keyword = '%Wagyuswap Squad NFT%'
+  const keyword = '%Faisaa.finance Squad NFT%'
 
-  const rawText = t(`Set %Wagyuswap Squad NFT% as Wagyuswap Profile avatar`)
+  const rawText = t(`Set %Faisaa.finance Squad NFT% as Faisaa.finance Profile avatar`)
 
   return (
     <TransWithElement
@@ -22,9 +22,9 @@ const NotOkNFT = ({ admissionProfile }) => {
         <>
           <LinkExternal
             style={{ display: 'inline' }}
-            href={`https://exchange.wagyuswap.app/nfts/collections/${admissionProfile}`}
+            href={`https://faisaa.finance/nfts/collections/${admissionProfile}`}
           >
-            {t('Wagyuswap Squad NFT')}
+            {t('Faisaa.finance Squad NFT')}
           </LinkExternal>
           <br />
         </>
@@ -37,9 +37,9 @@ const NotOkProfilePoints = ({ pointThreshold }) => {
   const { account } = useWeb3React()
   const { t } = useTranslation()
 
-  const keyword = '%Wagyuswap Profile%'
+  const keyword = '%Faisaa.finance Profile%'
 
-  const rawText = t(`Reach %point% or more %Wagyuswap Profile% points`, { point: pointThreshold })
+  const rawText = t(`Reach %point% or more %Faisaa.finance Profile% points`, { point: pointThreshold })
 
   return (
     <TransWithElement
@@ -50,9 +50,9 @@ const NotOkProfilePoints = ({ pointThreshold }) => {
           <br />
           <LinkExternal
             style={{ display: 'inline' }}
-            href={`https://exchange.wagyuswap.app/nfts/profile/${account}/achievements/`}
+            href={`https://faisaa.finance/nfts/profile/${account}/achievements/`}
           >
-            {t('Wagyuswap Profile')}
+            {t('Faisaa.finance Profile')}
           </LinkExternal>
         </>
       }
@@ -66,7 +66,7 @@ const configCriterias = (pointThreshold: number, admissionProfile: string, t) =>
     okMsg: t('Eligible NFT avatar found!'),
     notOkMsg: <NotOkNFT admissionProfile={admissionProfile} />,
     NotOkIcon: AccountIcon,
-    name: t('Wagyuswap Squad'),
+    name: t('Faisaa.finance Squad'),
   },
   isQualifiedPoints: {
     OkIcon: OkProfilePointsIcon,

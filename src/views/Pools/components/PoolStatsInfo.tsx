@@ -69,7 +69,7 @@ const PoolStatsInfo: React.FC<ExpandedFooterProps> = ({
         <Flex mb="8px" justifyContent="space-between">
           <Text small>{t('Requirement')}:</Text>
           <Text small textAlign="right">
-            {profileRequirement.required && t('Wagyuswap Profile')}{' '}
+            {profileRequirement.required && t('Faisaa.finance Profile')}{' '}
             {profileRequirement.thresholdPoints.gt(0) && (
               <Text small>
                 {profileRequirement.thresholdPoints.toNumber().toLocaleString()} {t('Profile Points')}
@@ -125,7 +125,7 @@ const PoolStatsInfo: React.FC<ExpandedFooterProps> = ({
       )}
       {vaultKey && (
         <Flex mb="2px" justifyContent={alignLinksToRight ? 'flex-end' : 'flex-start'}>
-          <LinkExternal href="https://docs.wagyuswap.app/wagyuswap/products/migration" bold={false} small>
+          <LinkExternal href="https://docs.faisaa.finance/wagyuswap/products/migration" bold={false} small>
             {t('View Tutorial')}
           </LinkExternal>
         </Flex>

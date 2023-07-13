@@ -4,8 +4,8 @@ import { PageMeta } from './types'
 export const DEFAULT_META: PageMeta = {
   title: 'WagyuSwap',
   description:
-    'The most popular AMM on BSC by user count! Earn WAG through yield farming or win it in the Lottery, then stake it in Sizzle Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by WagyuSwap), NFTs, and more, on a platform you can trust.',
-  image: 'https://exchange.wagyuswap.app/images/hero.png',
+    'The most popular AMM on BSC by user count! Earn FAISAA through yield farming or win it in the Lottery, then stake it in Sizzle Pools to earn more tokens! Initial Farm Offerings (new token launch model pioneered by WagyuSwap), NFTs, and more, on a platform you can trust.',
+  image: 'https://faisaa.finance/images/hero.png',
 }
 
 export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
@@ -136,7 +136,7 @@ export const getCustomMeta = (path: string, t: ContextApi['t']): PageMeta => {
       }
     case '/pancake-squad':
       return {
-        title: `${t('Wagyuswap Squad')} | ${t('WagyuSwap')}`,
+        title: `${t('Faisaa.finance Squad')} | ${t('WagyuSwap')}`,
       }
     default:
       return null

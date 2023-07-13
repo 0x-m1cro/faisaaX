@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { Trade, TradeType } from '@wagyu-swap/sdk'
+import { Trade, TradeType } from '@faisaa-finance/sdk'
 import { Button, Text, AutoRenewIcon } from 'packages/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { Field } from 'state/swap/actions'
@@ -112,7 +112,7 @@ export default function SwapModalFooter({
                   <Text mb="12px">{t('For each trade a %amount% fee is paid', { amount: '0.25%' })}</Text>
                   <Text>- {t('%amount% to LP token holders', { amount: '0.17%' })}</Text>
                   <Text>- {t('%amount% to the Treasury', { amount: '0.03%' })}</Text>
-                  <Text>- {t('%amount% towards WAG buyback and burn', { amount: '0.05%' })}</Text>
+                  <Text>- {t('%amount% towards FAISAA buyback and burn', { amount: '0.05%' })}</Text>
                 </>
               }
               ml="4px"

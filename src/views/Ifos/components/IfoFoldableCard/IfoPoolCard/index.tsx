@@ -42,8 +42,8 @@ export const cardConfig = (
     case PoolIds.poolBasic:
       if (meta?.version === 3.1) {
         const MSG_MAP = {
-          needQualifiedNFT: t('Set PancakeSquad NFT as Wagyuswap Profile avatar.'),
-          needQualifiedPoints: t('Reach a certain Wagyuswap Profile Points threshold.'),
+          needQualifiedNFT: t('Set PancakeSquad NFT as Faisaa.finance Profile avatar.'),
+          needQualifiedPoints: t('Reach a certain Faisaa.finance Profile Points threshold.'),
         }
 
         const msgs = Object.keys(meta)

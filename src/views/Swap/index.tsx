@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import styled from 'styled-components'
-import { CurrencyAmount, JSBI, Token, Trade } from '@wagyu-swap/sdk'
+import { CurrencyAmount, JSBI, Token, Trade } from '@faisaa-finance/sdk'
 import {
   Button,
   Text,

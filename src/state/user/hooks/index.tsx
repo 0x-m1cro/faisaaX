@@ -1,4 +1,4 @@
-import { ChainId, Pair, Token } from '@wagyu-swap/sdk'
+import { ChainId, Pair, Token } from '@faisaa-finance/sdk'
 import { differenceInDays } from 'date-fns'
 import flatMap from 'lodash/flatMap'
 import farms from 'config/constants/farms'
@@ -430,7 +430,7 @@ export function usePairAdder(): (pair: Pair) => void {
  * @param tokenB the other token
  */
 export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
-  return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'Wagyu-LP', 'Wagyu LPs')
+  return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'Faisaa-LP', 'Faisaa LPs')
 }
 
 /**

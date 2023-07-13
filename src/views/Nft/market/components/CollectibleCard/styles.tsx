@@ -12,7 +12,7 @@ import {
   WalletFilledIcon,
   Skeleton,
 } from 'packages/uikit'
-import { Price } from '@wagyu-swap/sdk'
+import { Price } from '@faisaa-finance/sdk'
 import { useTranslation } from 'contexts/Localization'
 import { multiplyPriceByAmount } from 'utils/prices'
 import styled from 'styled-components'

@@ -16,7 +16,7 @@ import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'
 import useToast from 'hooks/useToast'
 import { ToastDescriptionWithTx } from 'components/Toast'
-import { Token } from '@wagyu-swap/sdk'
+import { Token } from '@faisaa-finance/sdk'
 import { formatNumber } from 'utils/formatBalance'
 import useCatchTxError from 'hooks/useCatchTxError'
 import { updateUserBalance, updateUserPendingReward, updateUserStakedBalance } from 'state/pools'
@@ -56,8 +56,8 @@ const CollectModal: React.FC<CollectModalProps> = ({
   const [shouldCompound, setShouldCompound] = useState(isCompoundPool)
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     <>
-      <Text mb="12px">{t('Compound: collect and restake WAG into pool.')}</Text>
-      <Text>{t('Harvest: collect WAG and send to wallet')}</Text>
+      <Text mb="12px">{t('Compound: collect and restake FAISAA into pool.')}</Text>
+      <Text>{t('Harvest: collect FAISAA and send to wallet')}</Text>
     </>,
     { placement: 'bottom-end', tooltipOffset: [20, 10] },
   )

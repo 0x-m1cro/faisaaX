@@ -11,7 +11,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Brand'),
-        href: 'https://docs.wagyuswap.app/brand',
+        href: 'https://docs.faisaa.finance/brand',
       },
       {
         label: t('Blog'),
@@ -19,7 +19,7 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       // {
       //   label: t('Community'),
-      //   href: 'https://docs.wagyuswap.app/contact-us/telegram',
+      //   href: 'https://docs.faisaa.finance/contact-us/telegram',
       // },
       // {
       //   label: t('Litepaper'),
@@ -39,15 +39,15 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
   //   items: [
   //     {
   //       label: t('Customer Support'),
-  //       href: 'https://docs.wagyuswap.app/contact-us/customer-support',
+  //       href: 'https://docs.faisaa.finance/contact-us/customer-support',
   //     },
   //     {
   //       label: t('Troubleshooting'),
-  //       href: 'https://docs.wagyuswap.app/help/troubleshooting',
+  //       href: 'https://docs.faisaa.finance/help/troubleshooting',
   //     },
   //     {
   //       label: t('Guides'),
-  //       href: 'https://docs.wagyuswap.app/get-started',
+  //       href: 'https://docs.faisaa.finance/get-started',
   //     },
   //   ],
   // },
@@ -60,19 +60,19 @@ export const footerLinks: (t: ContextApi['t']) => FooterLinkType[] = (t) => [
       },
       {
         label: t('Documentation'),
-        href: 'https://docs.wagyuswap.app/wagyuswap',
+        href: 'https://docs.faisaa.finance/wagyuswap',
       },
       // {
       //   label: t('Bug Bounty'),
-      //   href: 'https://docs.wagyuswap.app/code/bug-bounty',
+      //   href: 'https://docs.faisaa.finance/code/bug-bounty',
       // },
       // {
       //   label: t('Audits'),
-      //   href: 'https://docs.wagyuswap.app/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
+      //   href: 'https://docs.faisaa.finance/help/faq#is-pancakeswap-safe-has-pancakeswap-been-audited',
       // },
       // {
       //   label: t('Careers'),
-      //   href: 'https://docs.wagyuswap.app/hiring/become-a-chef',
+      //   href: 'https://docs.faisaa.finance/hiring/become-a-chef',
       // },
     ],
   },

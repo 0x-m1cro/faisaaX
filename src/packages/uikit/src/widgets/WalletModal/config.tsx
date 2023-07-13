@@ -37,7 +37,7 @@ const connectors: Config[] = [
   //   icon: TrustWallet,
   //   connectorId: ConnectorNames.Injected,
   //   priority: 4,
-  //   href: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://exchange.wagyuswap.app/',
+  //   href: 'https://link.trustwallet.com/open_url?coin_id=20000714&url=https://faisaa.finance/',
   // },
   {
     title: 'WalletConnect',

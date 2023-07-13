@@ -71,10 +71,10 @@ const LotteryCardData: IconCardData = {
 const bottomLeftImage = {
   path: '/images/home/prediction-cards/',
   attributes: [
-    { src: 'bottom-left', alt: 'WAG card' },
-    { src: 'green', alt: 'Green WAG card with up arrow' },
+    { src: 'bottom-left', alt: 'FAISAA card' },
+    { src: 'green', alt: 'Green FAISAA card with up arrow' },
     { src: 'red', alt: 'Red Cake card with down arrow' },
-    { src: 'top-right', alt: 'WAG card' },
+    { src: 'top-right', alt: 'FAISAA card' },
   ],
 }
 

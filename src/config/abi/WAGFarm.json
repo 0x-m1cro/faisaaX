@@ -341,7 +341,7 @@
   },
   {
     "inputs": [],
-    "name": "WAG",
+    "name": "FAISAA",
     "outputs": [
       {
         "internalType": "contract IBEP20",

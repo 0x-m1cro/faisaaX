@@ -71,7 +71,7 @@ const BalanceField: React.FC<PropsType> = ({
     <>
       <Flex alignItems="center" justifyContent="space-between" mb="8px">
         <Text color="textSubtle" textTransform="uppercase" bold fontSize="12px">
-          {t('WAG to lock')}
+          {t('FAISAA to lock')}
         </Text>
         <Flex alignItems="center" minWidth="70px">
           <Image src={getTokenLogoURL(stakingAddress)} width={24} height={24} alt={stakingSymbol} />

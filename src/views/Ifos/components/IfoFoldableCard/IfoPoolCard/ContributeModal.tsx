@@ -87,7 +87,7 @@ const ContributeModal: React.FC<Props> = ({
   const raisingTokenContractApprover = useERC20(currency.address)
   const { t } = useTranslation()
   const valueWithTokenDecimals = new BigNumber(value).times(DEFAULT_TOKEN_DECIMAL)
-  const label = currency === tokens.cake ? t('Max. WAG entry') : t('Max. token entry')
+  const label = currency === tokens.cake ? t('Max. FAISAA entry') : t('Max. token entry')
 
   const { isApproving, isApproved, isConfirmed, isConfirming, handleApprove, handleConfirm } =
     useApproveConfirmTransaction({
@@ -144,11 +144,11 @@ const ContributeModal: React.FC<Props> = ({
   }, [maximumTokenEntry, userCurrencyBalance])
 
   const basicTooltipContent = t(
-    'For the private sale, each eligible participant will be able to commit any amount of WAG up to the maximum commit limit, which is published along with the IFO voting proposal.',
+    'For the private sale, each eligible participant will be able to commit any amount of FAISAA up to the maximum commit limit, which is published along with the IFO voting proposal.',
   )
 
   const unlimitedToolipContent = t(
-    'For the public sale, Max WAG entry is capped by your average WAG balance in the IFO WAG pool. To increase the max entry, Stake more WAG into the IFO WAG pool',
+    'For the public sale, Max FAISAA entry is capped by your average FAISAA balance in the IFO FAISAA pool. To increase the max entry, Stake more FAISAA into the IFO FAISAA pool',
   )
 
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
@@ -176,7 +176,7 @@ const ContributeModal: React.FC<Props> = ({
             <Flex flexGrow={1} justifyContent="flex-end">
               <Image
                 src={
-                  ifo.currency.symbol === 'WAG'
+                  ifo.currency.symbol === 'FAISAA'
                     ? '/images/cake.svg'
                     : `/images/farms/${currency.symbol.split(' ')[0].toLocaleLowerCase()}.svg`
                 }
@@ -209,7 +209,7 @@ const ContributeModal: React.FC<Props> = ({
             >
               {valueWithTokenDecimals.isGreaterThan(userCurrencyBalance)
                 ? t('Insufficient Balance')
-                : t('Exceeded max WAG entry')}
+                : t('Exceeded max FAISAA entry')}
             </Text>
           )}
           <Text color="textSubtle" textAlign="right" fontSize="12px" mb="16px">
@@ -232,12 +232,12 @@ const ContributeModal: React.FC<Props> = ({
           </Flex>
           <Text color="textSubtle" fontSize="12px" mb="24px">
             {t(
-              'If you don’t commit enough WAG, you may not receive any IFO tokens at all and will only receive a full refund of your WAG.',
+              'If you don’t commit enough FAISAA, you may not receive any IFO tokens at all and will only receive a full refund of your FAISAA.',
             )}
             <Link
               fontSize="12px"
               display="inline"
-              href="https://docs.wagyuswap.app/products/ifo-initial-farm-offering"
+              href="https://docs.faisaa.finance/products/ifo-initial-farm-offering"
               external
             >
               {t('Read more')}

@@ -1,20 +1,20 @@
-# 🥞 Wagyuswap UIkit
+# 🥞 Faisaa.finance UIkit
 
 [![Version](https://img.shields.io/npm/v/packages/uikit)](https://www.npmjs.com/package/packages/uikit) [![Size](https://img.shields.io/bundlephobia/min/packages/uikit)](https://www.npmjs.com/package/packages/uikit)
 
-Wagyuswap UIkit is a set of React components and hooks used to build pages on Wagyuswap's apps. It also contains a theme file for dark and light mode.
+Faisaa.finance UIkit is a set of React components and hooks used to build pages on Faisaa.finance's apps. It also contains a theme file for dark and light mode.
 
 ## Install
 
 `yarn add packages/uikit`
 
-**\*Note**: In case you want to use the older version of the Wagyuswap UIkit, you should install @pancakeswap-libs/uikit, instead, but we recommend using the latest version of the UIkit.\*
+**\*Note**: In case you want to use the older version of the Faisaa.finance UIkit, you should install @pancakeswap-libs/uikit, instead, but we recommend using the latest version of the UIkit.\*
 
 ## Setup
 
 ### Theme
 
-Before using Wagyuswap UIkit, you need to provide the theme file to styled-component.
+Before using Faisaa.finance UIkit, you need to provide the theme file to styled-component.
 
 ```
 import { ThemeProvider } from 'styled-components'
